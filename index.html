@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Fair & Literature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="home">
+  <header class="top-bar">
+    <div class="container header-content">
+      <h1>Book Fair & Literature</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="cart.html">Cart (<span class="cart-count">0</span>)</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Welcome</h2>
+      <p>
+        This is a simple frontend-only website for a book fair. The project shows 4 real books,
+        and the book titles, authors, publishers, and descriptions are matched to the selected covers.
+        Prices, ratings, and checkout remain a frontend simulation for the demo.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Selected Books Overview</h2>
+      <div class="info-grid">
+        <div class="info-card-simple">
+          <h3>The Godfather</h3>
+          <p>Mario Puzo</p>
+          <p><strong>Publisher:</strong> Arrow Books</p>
+        </div>
+
+        <div class="info-card-simple">
+          <h3>Mexican Gothic</h3>
+          <p>Silvia Moreno-Garcia</p>
+          <p><strong>Publisher:</strong> Del Rey</p>
+        </div>
+
+        <div class="info-card-simple">
+          <h3>The Hacienda</h3>
+          <p>Isabel Ca&#241;as</p>
+          <p><strong>Publisher:</strong> Berkley</p>
+        </div>
+
+        <div class="info-card-simple">
+          <h3>The Boys from Biloxi</h3>
+          <p>John Grisham</p>
+          <p><strong>Publisher:</strong> Vintage</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Latest Releases</h2>
+      <div id="latestBooks" class="book-grid"></div>
+    </section>
+
+    <section class="section">
+      <h2>All Books</h2>
+      <input type="text" id="searchInput" placeholder="Search by title, author, or genre">
+      <p id="searchResult" class="small-text"></p>
+      <div id="allBooks" class="book-grid"></div>
+    </section>
+
+    <section class="section">
+      <h2>Book Blog</h2>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <h3>Best Books For New Readers</h3>
+          <p>Try books with simple language, clear themes, and strong characters.</p>
+        </article>
+
+        <article class="blog-card">
+          <h3>Why Book Fairs Matter</h3>
+          <p>Book fairs help students discover books, compare choices, and enjoy reading together.</p>
+        </article>
+
+        <article class="blog-card">
+          <h3>How To Choose A Book Quickly</h3>
+          <p>Read the title, check the genre, look at the rating, and then read the short description.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Developed by Omar & Ammar | Book Fair & Literature</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

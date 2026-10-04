@@ -1,0 +1,65 @@
+/* ====== Account / Login Page Styles ====== */
+/* Matched to global Book Store theme */
+
+.login-form-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 450px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.login-card h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
+  outline: none;
+}
+
+.login-btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Ensure backward compatibility for any legacy classes */
+.form {
+  max-width: 450px;
+  margin: 0 auto;
+}

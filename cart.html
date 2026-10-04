@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Book Fair & Literature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="cart">
+  <header class="top-bar">
+    <div class="container header-content">
+      <h1>Book Fair & Literature</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="cart.html" class="active">Cart (<span class="cart-count">0</span>)</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Shopping Cart</h2>
+      <div id="cartItems"></div>
+      <p id="cartTotal" class="cart-total"></p>
+    </section>
+
+    <section class="section">
+      <h2>Checkout</h2>
+      <form id="checkoutForm" class="contact-form">
+        <label for="checkoutName">Full Name</label>
+        <input type="text" id="checkoutName" placeholder="Enter your full name" required>
+
+        <label for="checkoutEmail">Email</label>
+        <input type="email" id="checkoutEmail" placeholder="Enter your email" required>
+
+        <label for="checkoutAddress">Address</label>
+        <textarea id="checkoutAddress" rows="4" placeholder="Enter your address" required></textarea>
+
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" placeholder="1111 2222 3333 4444" required>
+
+        <button type="submit" class="btn" id="checkoutButton">Proceed to Payment</button>
+        <p id="checkoutMessage" class="small-text" style="margin-top: 10px;"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Developed by Omar & Ammar | Book Fair & Literature</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
